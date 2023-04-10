@@ -4,7 +4,6 @@ import Link from "next/link"
 
 const Container = styled.div`
   padding: 20px 0;
-  background: #e9dcd2;
 `
 
 export const HomeBanner = () => {
