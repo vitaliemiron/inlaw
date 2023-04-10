@@ -9,7 +9,10 @@ import { Container } from "@mui/material"
 const InfoSection = styled(Paper)`
   padding: 100px 0;
   margin-bottom: 16px;
-  background: url("/info-bg.png") top left no-repeat;
+  background-image: linear-gradient(rgba(228, 210, 210, 0.5), rgba(211, 189, 189, 0.5)),
+    url("/info-bg.png");
+  background-position: top left;
+  background-repeat: no-repeat;
   background-size: cover;
 `
 
