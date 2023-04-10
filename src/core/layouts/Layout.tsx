@@ -59,7 +59,7 @@ const pages = [
   { name: "Home", href: "/" },
   { name: "Întrebări", href: "/about" },
   { name: "Răspunsuri", href: "/contact" },
-  { name: "Juriști", href: "/contact" },
+  { name: "Juriști", href: "/team" },
   { name: "Acte", href: "/acte" },
   { name: "Profil", href: "/contact" },
 ]
