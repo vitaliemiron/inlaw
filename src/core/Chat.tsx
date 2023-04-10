@@ -172,6 +172,7 @@ const Chat = () => {
                   id="outlined-basic-email"
                   label="Type Something"
                   fullWidth
+                  autoComplete="off"
                   {...register("message")}
                 />
               </Grid>
