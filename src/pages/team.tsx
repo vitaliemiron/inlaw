@@ -6,10 +6,6 @@ const Team: BlitzPage = () => {
   return <TeamList />
 }
 
-Team.getLayout = (page) => (
-  <Layout>
-    <Team />
-  </Layout>
-)
+Team.getLayout = (page) => <Layout>{page}</Layout>
 
 export default Team
