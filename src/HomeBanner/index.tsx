@@ -12,10 +12,10 @@ export const HomeBanner = () => {
     <Container>
       <MuiContainer>
         <Typography variant="h2" component="h2" gutterBottom>
-          Obține consultanță juridică{" "}
+          Obține consultanță juridică
         </Typography>
         <Typography variant="h5" component="h5" gutterBottom>
-          Întreabă un avocat gratuit și fără programare{" "}
+          Întreabă un avocat gratuit și fără programare
         </Typography>
         <Link href="#chat">
           <Button type="button" variant="outlined">
