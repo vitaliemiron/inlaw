@@ -14,10 +14,10 @@ export const Container = styled.div`
 `
 
 const options = [
-  { name: "Declarații", icon: <TextSnippetIcon />, href: "#" },
-  { name: "Cereri", icon: <TextSnippetIcon />, href: "#" },
-  { name: "Demersuri", icon: <TextSnippetIcon />, href: "#" },
-  { name: "Ordonanțe", icon: <TextSnippetIcon />, href: "#" },
+  { name: "Declarații", icon: <TextSnippetIcon />, href: "/declar.docx" },
+  { name: "Cereri", icon: <TextSnippetIcon />, href: "/CERERI.docx" },
+  { name: "Demersuri", icon: <TextSnippetIcon />, href: "/DEMERS.docs" },
+  { name: "Ordonanțe", icon: <TextSnippetIcon />, href: "/ord.docx" },
 ]
 
 const LeftPart = MuiStyled(Box)(({ theme }) => ({
