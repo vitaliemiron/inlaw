@@ -82,7 +82,15 @@ const Chat = () => {
 
     setChat((prev) => [...prev, userMessage])
 
-    const chatHistory = chat.map((m) => `User: ${m.text}\nAI: `).join("")
+    const chatHistory = chat
+      .map((m) => {
+        if (m.sender === "guest") {
+          return `User: ${m.text}\n AI:`
+        } else {
+          return `AI: ${m.text}\n AI:`
+        }
+      })
+      .join("")
 
     const rs = await sendMessageMutation(
       { message: message, conversationHistory: chatHistory },
