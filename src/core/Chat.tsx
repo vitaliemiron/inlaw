@@ -103,7 +103,7 @@ const Chat = () => {
   }
 
   return (
-    <div>
+    <div id="chat">
       <Grid container component={StyledPaper}>
         <Grid item xs={3} sx={useStyles.borderRight500}>
           <List>
