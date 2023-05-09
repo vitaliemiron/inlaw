@@ -85,9 +85,9 @@ const Chat = () => {
     const chatHistory = chat
       .map((m) => {
         if (m.sender === "guest") {
-          return `User: ${m.text}\n AI:`
+          return `User: ${m.text}\n`
         } else {
-          return `AI: ${m.text}\n AI:`
+          return `AI: ${m.text}\n`
         }
       })
       .join("")

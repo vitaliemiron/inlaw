@@ -11,6 +11,28 @@ import { Container } from "@mui/material"
 import styled from "@emotion/styled"
 import { toast } from "react-toastify"
 
+const sendEmail = async (formData) => {
+  var data = {
+    service_id: process.env.NEXT_PUBLIC_JSEMAIL_SERVICE_ID,
+    template_id: process.env.NEXT_PUBLIC_JSEMAIL_TEMPLATE_ID,
+    user_id: process.env.NEXT_PUBLIC_JSEMAIL_USER_ID,
+    template_params: {
+      message: formData.description,
+      subject: formData.subject,
+      from_name: formData.email,
+    },
+  }
+
+  const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+  return response
+}
+
 const ContactForm = () => {
   const {
     register,
@@ -19,8 +41,13 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm()
 
-  const onSubmit = (data) => {
-    toast("Mesajul a fost trimis", { type: "success" })
+  const onSubmit = async (data) => {
+    const rs = await sendEmail(data)
+    if (rs.status === 200) {
+      toast("Mesajul a fost trimis", { type: "success" })
+    } else {
+      toast("Incercati mai tarziu", { type: "error" })
+    }
 
     // Clear the form fields after submission (optional)
     setValue("subject", "")
