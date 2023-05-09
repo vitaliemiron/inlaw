@@ -100,10 +100,7 @@ const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({
           </Toolbar>
         </CustomAppBar>
 
-        <AppContent>
-          {children}
-          <OnlineConsulting />
-        </AppContent>
+        <AppContent>{children}</AppContent>
 
         <CustomFooter>
           <Typography variant="body1">
