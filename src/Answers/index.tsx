@@ -58,9 +58,11 @@ export const AnswersContent: FC<{ children: ReactNode }> = ({ children }) => {
       <div className="info">
         <div className="title">Cum aflu mai multe detalii la întrebarea mea?</div>{" "}
         <div>
-          Pentru a cocretiza întrebarea sau a intra în cdialog cu un jurist și a afla mai multe
-          detalii scrieți în comentariu sub întrebare adresa de email la care doriți să fiți
-          contactat și mesajul ”doresc să iau legătura cu un consultant juridic”
+          Pagina răspunsuri este inspirată din întrebările adresate de dvs. din diferite ramuri de
+          drept. Raspunsul este unul general conform legislației în vigoare. Pentru a obține un
+          raspuns mai concret și apropiat problemei dumneavoastră juridice vă îndemnăm să luați
+          legătura cu unul din consultanți noștri juridici sau sa ne expediați un email la adresa
+          indicată la subsolul paginii.
         </div>
       </div>
     </Container>
