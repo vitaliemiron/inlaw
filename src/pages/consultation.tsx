@@ -26,7 +26,7 @@ const ConsultationForm = () => {
   const [mutate] = useMutation(useCheckout)
 
   if (!session.userId) {
-    void router.push("/login")
+    void router.push("/auth/login")
   }
 
   React.useEffect(() => {
