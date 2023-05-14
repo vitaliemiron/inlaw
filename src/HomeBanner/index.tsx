@@ -16,7 +16,7 @@ export const HomeBanner = () => {
         <Typography variant="h5" component="h5" gutterBottom>
           Întreabă un avocat gratuit și fără programare
         </Typography>
-        <Link href="#chat">
+        <Link href="/questions">
           <Button type="button" variant="outlined">
             Adresează o intrebare
           </Button>
