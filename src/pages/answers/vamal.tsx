@@ -2,7 +2,7 @@ import Layout from "src/core/layouts/Layout"
 import { BlitzPage } from "@blitzjs/next"
 import { AnswersContent } from "src/Answers"
 
-const Penal: BlitzPage = () => {
+const Vamal: BlitzPage = () => {
   return (
     <div>
       <AnswersContent>
@@ -592,5 +592,5 @@ const Penal: BlitzPage = () => {
   )
 }
 
-Penal.getLayout = (page) => <Layout>{page}</Layout>
-export default Penal
+Vamal.getLayout = (page) => <Layout>{page}</Layout>
+export default Vamal

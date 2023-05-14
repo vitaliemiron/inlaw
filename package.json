@@ -24,9 +24,9 @@
     ]
   },
   "dependencies": {
-    "@blitzjs/auth": "2.0.0-beta.25",
-    "@blitzjs/next": "2.0.0-beta.25",
-    "@blitzjs/rpc": "2.0.0-beta.25",
+    "@blitzjs/auth": "2.0.0-beta.27",
+    "@blitzjs/next": "2.0.0-beta.27",
+    "@blitzjs/rpc": "2.0.0-beta.27",
     "@chatui/core": "2.4.2",
     "@emotion/react": "11.10.6",
     "@emotion/styled": "11.10.6",
@@ -36,10 +36,11 @@
     "@mui/icons-material": "5.11.16",
     "@mui/material": "5.11.16",
     "@prisma/client": "4.6.1",
+    "@stripe/stripe-js": "1.52.1",
     "@xstate/react": "3.2.1",
     "axios": "1.3.5",
-    "blitz": "2.0.0-beta.25",
-    "next": "13.2",
+    "blitz": "2.0.0-beta.27",
+    "next": "13.4.2",
     "openai": "3.2.1",
     "openapi": "1.0.1",
     "prisma": "4.6.1",
@@ -48,6 +49,7 @@
     "react-hook-form": "7.43.9",
     "react-toastify": "9.1.2",
     "secure-password": "4.0.0",
+    "stripe": "12.5.0",
     "xstate": "4.37.1",
     "zod": "3.20.2"
   },
@@ -71,6 +73,7 @@
     "prettier-plugin-prisma": "4.4.0",
     "pretty-quick": "3.1.3",
     "preview-email": "3.0.7",
+    "prisma-dbml-generator": "0.10.0",
     "typescript": "^4.8.4",
     "vite-tsconfig-paths": "3.6.0",
     "vitest": "0.25.3"

@@ -4,7 +4,7 @@ import { BlitzLayout } from "@blitzjs/next"
 import { AppBar, Box, Toolbar, Typography, Container, Button } from "@mui/material"
 import { useRouter } from "next/router"
 import Image from "next/image"
-import { OnlineConsulting } from "src/OnlineConsulting"
+import Link from "next/link"
 
 import { styled } from "@mui/system"
 
@@ -61,7 +61,6 @@ const pages = [
   { name: "Răspunsuri", href: "/answers" },
   { name: "Juriști", href: "/team" },
   { name: "Acte", href: "/acte" },
-  { name: "Profil", href: "/profile" },
 ]
 
 const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({
@@ -94,7 +93,9 @@ const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({
                 </Box>
               ))}
               <Box ml={2}>
-                <Button variant="outlined">Aistenta cu palta</Button>
+                <Link href="/consultation">
+                  <Button variant="outlined">Aistenta cu palta</Button>
+                </Link>
               </Box>
             </Box>
           </Toolbar>

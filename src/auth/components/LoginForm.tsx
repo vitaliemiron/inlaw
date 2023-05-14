@@ -6,15 +6,21 @@ import login from "src/auth/mutations/login"
 import { Login } from "src/auth/schemas"
 import { useMutation } from "@blitzjs/rpc"
 import { Routes } from "@blitzjs/next"
+import styled from "@emotion/styled"
 
 type LoginFormProps = {
   onSuccess?: (user: PromiseReturnType<typeof login>) => void
 }
 
+const Container = styled.div`
+  display: grid;
+  justify-content: center;
+`
+
 export const LoginForm = (props: LoginFormProps) => {
   const [loginMutation] = useMutation(login)
   return (
-    <div>
+    <Container>
       <h1>Login</h1>
 
       <Form
@@ -40,19 +46,14 @@ export const LoginForm = (props: LoginFormProps) => {
         <LabeledTextField name="email" label="Email" placeholder="Email" />
         <LabeledTextField name="password" label="Password" placeholder="Password" type="password" />
         <div>
-          <Link href={Routes.ForgotPasswordPage()}>
-            Forgot your password?
-          </Link>
+          <Link href={Routes.ForgotPasswordPage()}>Forgot your password?</Link>
         </div>
       </Form>
 
       <div style={{ marginTop: "1rem" }}>
-        Or{" "}
-        <Link href={Routes.SignupPage()}>
-          Sign Up
-        </Link>
+        Or <Link href={Routes.SignupPage()}>Sign Up</Link>
       </div>
-    </div>
+    </Container>
   )
 }
 

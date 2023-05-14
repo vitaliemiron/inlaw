@@ -10,7 +10,9 @@ const Profile: BlitzPage = () => {
   return (
     <LoginForm
       onSuccess={(_user) => {
-        const next = router.query.next ? decodeURIComponent(router.query.next as string) : "/"
+        const next = router.query.next
+          ? decodeURIComponent(router.query.next as string)
+          : "/consultation"
         return router.push(next)
       }}
     />
