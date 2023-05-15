@@ -14,7 +14,7 @@ export default api(async (req, res, ctx: Ctx) => {
         line_items: [
           {
             // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-            price: "price_1N7aItLWLZUQrZWZVFAFig8w",
+            price: "price_1N7h3lLWLZUQrZWZRWK7X73b",
             quantity: 1,
           },
         ],

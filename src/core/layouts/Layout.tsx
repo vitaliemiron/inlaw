@@ -94,7 +94,7 @@ const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({
               ))}
               <Box ml={2}>
                 <Link href="/consultation">
-                  <Button variant="outlined">Asistenta cu palta</Button>
+                  <Button variant="outlined">Asistenta cu plata</Button>
                 </Link>
               </Box>
             </Box>
