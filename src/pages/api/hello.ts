@@ -19,8 +19,8 @@ export default api(async (req, res, ctx: Ctx) => {
           },
         ],
         mode: "payment",
-        success_url: `http://localhost:3000/consultation/?success=true`,
-        cancel_url: `http://localhost:3000/consultation/?canceled=true`,
+        success_url: `https://inlaw.vercel.app/consultation/?success=true`,
+        cancel_url: `https://inlaw.vercel.app/consultation/?canceled=true`,
       })
       res.status(200).json({ sessionURL: session.url })
     } catch (err) {
